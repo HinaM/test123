@@ -67,7 +67,7 @@ body{
 .contents{
     background-color: #F3F3F3;
     width: calc(100% - 280px);
-    height: calc(100vh - 80px);
+    /*height: calc(100vh - 80px);*/
     margin-left: auto;
     margin-top: 80px;
     display: flex;
@@ -75,18 +75,22 @@ body{
 }
 .contents .title{
     width: 100%;
-    height: 20%;
+    /*height: 20%;*/
+    
     background-color: #f3f3f3;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+.contents .title .ti{
+    padding: 30px;
+}
 .contents .title h1,.contents .title p{
-    margin-left: 30px;
+    
     margin-bottom: 10px;
 }
 .contents .title h2{
-    margin-left: 30px;
+    
     display: flex;
 }
 .contents .title h2 span{
@@ -107,72 +111,60 @@ body{
 .contents .title .other{
     background-color: #b3a99c;
 }
-.contents .content{
-    width: 100%;
-    height: 45%;
-    background-color: #f3f3f3;
-    overflow-y: scroll;
-}
 .contents .content .con_detail{
-    padding: 0px 30px;
+    padding: 30px;
+    padding-top: 0;
+    /*min-height: 30vh;*/
 }
 .contents .comment{
-    width: 100%;
-    height: 35%;
-    background-color: #E6E6E6;
-    overflow-y: scroll;
+    background-color: #DEDEDE;
 }
-/*
-.subjects{
-    background-color: #F3F3F3;
-    width: calc(100% - 280px);
-    height: calc(100vh - 80px);
-    margin-left: auto;
-    
-    margin-top: 80px;
-}
-.subjects .title{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 0px 30px;
-}
-.subjects .title h1,.subjects .title p,.subjects .title h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.subjects h1{
-    font-size: 36px;
-}
-.subjects h2{
-    display: flex;
-}
-.subjects h2 span{
-    font-weight: normal;
-    font-size: 20px;
-    background-color: #455C7B;
-    color: #FFFBFB;
-    padding: 5px 8px;
-    border-radius: 25px;
-    margin-right: 5px;
-}
-.subjects .music{
-    background-color: #91AA9D;
-}
-.subjects .mood{
-    background-color: #AC6C82;
-}
-.subjects .other{
-    background-color: #b3a99c;
-}
-.subjects .content{
-    min-height: 45%;
-    padding: 0 30px;
-    padding-bottom: 40px;
+.contents .comment .comment_list{
+    padding: 30px;
 
 }
-.subjects .comment{
-    background-color: #E6E6E6;
-    width: 100%;
-    min-height: 30%;
+.contents .comment .comment_list .sum{
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bebebe;
 }
-*/
+.contents .comment .comment_list .coms{
+    padding: 10px 0;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+}
+.contents .comment .comment_list .coms p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.contents .comment .comment_list .coms .comment_date{
+    font-size: 15px;
+    color: #767676;
+}
+.contents .comment .form{
+    background-color: #f3f3f3;
+}
+.contents .comment .form form{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contents .comment .form form input{
+    width: 90%;
+    font-size: 18px;
+    padding: 2px 5px;
+    outline: none;
+    border: none;
+    background-color: #f3f3f3;
+}
+#sub{
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #729599;
+}

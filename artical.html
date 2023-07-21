@@ -70,29 +70,51 @@
         -->
         <div class="contents">
             <div class="title">
-                <h1>技術分享-Selenium語法</h1>
-                <p>匿名 · 2023-07-10 14:04</p>
-                <h2><span class="classes">技術研究</span></h2>
+                <div class="ti">
+                    <h1>技術分享-Selenium語法</h1>
+                    <p>匿名 · 2023-07-10 14:04</p>
+                    <h2><span class="classes">技術研究</span></h2>
+                </div>
             </div>
             <div class="content">
                 <div class="con_detail">
                     <p>阿阿阿阿阿阿阿阿阿阿阿阿ㄚ</p>
-                    
                 </div>
             </div>
             <div class="comment">
                 <div class="comment_list">
-
+                    <p class="sum">留言一覽（0）</p>
+                    <div class="coms">
+                        <p class="header_detail">#1 匿名</p>
+                        <p class="comment_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam libero ducimus esse, fugiat reprehenderit aliquid repellendus sunt nihil a aspernatur quam, soluta aperiam unde, tenetur in culpa. Veritatis, facilis.</p>
+                        <p class="comment_date">2023-07-10 14:04</p>
+                    </div>
                 </div>
-                <form>
-                    <input type="text" name="new_comment">
-                    <button>送出</button>
-                </form>
+                <div class="form">
+                    <form id="ComSub" onsubmit="return CheckForm();">
+                        <input type="text" id="newComment" name="newComment" placeholder="留言…">
+                        <button id="sub">送出</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
     
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+
+
+function CheckForm(){
+    const formElement = document.getElementById('ComSub');
+    const newComment = formElement[0].value;
+    
+
+    if (newComment == ""){
+        alert("留言不可為空");
+        return false;
+    }
+}
+</script>
 
 </html>

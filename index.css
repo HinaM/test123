@@ -68,7 +68,7 @@ body{
 .subjects{
     background-color: #F3F3F3;
     width: calc(100% - 320px);
-    min-height: calc(100vh - 120px);
+    /*min-height: calc(100vh - 120px);*/
     margin-left: auto;
     padding: 20px;
     margin-top: 80px;
